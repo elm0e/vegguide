@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchViewController"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="z3E-sF-chn" customClass="SearchView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <scrollView contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hdt-oS-Htb" userLabel="Scroll View">
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5L1-9x-Muw" userLabel="Content View">
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Search Location" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Va-GZ-XxK" userLabel="Location Label">
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mQk-FZ-UMv" userLabel="Reset Button">
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="Dry-tw-bM3"/>
+                                        <constraint firstAttribute="width" constant="30" id="Hrr-aF-WbO"/>
+                                    </constraints>
+                                    <state key="normal" image="compass"/>
+                                </button>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Current Location" textAlignment="natural" minimumFontSize="10" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="oPn-PR-h2c" userLabel="Location">
+                                    <accessibility key="accessibilityConfiguration">
+                                        <accessibilityTraits key="traits" searchField="YES"/>
+                                    </accessibility>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done"/>
+                                </textField>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Veg Level" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ks4-bo-afQ" userLabel="VegLevel Label">
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" apportionsSegmentWidthsByContent="YES" segmentControlStyle="plain" selectedSegmentIndex="2" translatesAutoresizingMaskIntoConstraints="NO" id="ybf-PJ-M6s" userLabel="VegLevel">
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="28" id="DCm-2S-T66"/>
+                                        <constraint firstAttribute="width" constant="292" id="SrK-5y-MTH"/>
+                                    </constraints>
+                                    <segments>
+                                        <segment title="Anything"/>
+                                        <segment title="Veg Options"/>
+                                        <segment title="Vegetarian"/>
+                                        <segment title="Vegan"/>
+                                    </segments>
+                                </segmentedControl>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Search Radius" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C3n-X0-bud" userLabel="Radius Label">
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="1" maxValue="50" translatesAutoresizingMaskIntoConstraints="NO" id="mWj-s3-le5">
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </slider>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="10 miles" lineBreakMode="tailTruncation" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5SX-Ex-Lxf" userLabel="Radius Units Label">
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Hours" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bMZ-f5-QLC" userLabel="Open Now Title Label">
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Only show places that are open now" lineBreakMode="tailTruncation" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dQl-yz-cD9" userLabel="Open Now Label">
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="WxN-lm-HIP" userLabel="OpenNow">
+                                    <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                </switch>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Keyword" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="grn-k9-Abz" userLabel="Keyword Label">
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="(pizza, indian, restaurant name...)" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Erk-D2-Pdi" userLabel="Keyword Help">
+                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="10" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="NvD-Ok-cOD" userLabel="Keyword">
+                                    <accessibility key="accessibilityConfiguration">
+                                        <accessibilityTraits key="traits" searchField="YES"/>
+                                    </accessibility>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done"/>
+                                </textField>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jLP-1S-daq">
+                                    <accessibility key="accessibilityConfiguration">
+                                        <bool key="isElement" value="NO"/>
+                                    </accessibility>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <state key="normal" title="Search"/>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstItem="grn-k9-Abz" firstAttribute="leading" secondItem="5L1-9x-Muw" secondAttribute="leading" constant="7" id="7Jc-fC-KVe"/>
+                                <constraint firstAttribute="trailing" secondItem="NvD-Ok-cOD" secondAttribute="trailing" constant="8" id="8x8-zk-wS9"/>
+                                <constraint firstItem="dQl-yz-cD9" firstAttribute="top" secondItem="bMZ-f5-QLC" secondAttribute="bottom" constant="5" id="AEw-w4-ULA"/>
+                                <constraint firstItem="5SX-Ex-Lxf" firstAttribute="leading" secondItem="mWj-s3-le5" secondAttribute="trailing" constant="5" id="Bkf-ot-Xwx"/>
+                                <constraint firstItem="bMZ-f5-QLC" firstAttribute="leading" secondItem="5L1-9x-Muw" secondAttribute="leading" constant="8" id="DP9-F5-iHV"/>
+                                <constraint firstItem="3Va-GZ-XxK" firstAttribute="leading" secondItem="5L1-9x-Muw" secondAttribute="leading" constant="8" id="FXT-dI-0LH"/>
+                                <constraint firstAttribute="trailing" secondItem="5SX-Ex-Lxf" secondAttribute="trailing" constant="8" id="H4O-3m-e1f"/>
+                                <constraint firstItem="dQl-yz-cD9" firstAttribute="leading" secondItem="bMZ-f5-QLC" secondAttribute="leading" id="IzL-zB-TWc"/>
+                                <constraint firstItem="jLP-1S-daq" firstAttribute="top" secondItem="NvD-Ok-cOD" secondAttribute="bottom" constant="20" id="K2N-pb-7IR"/>
+                                <constraint firstItem="grn-k9-Abz" firstAttribute="centerY" secondItem="Erk-D2-Pdi" secondAttribute="centerY" id="LY5-RI-UX7"/>
+                                <constraint firstItem="WxN-lm-HIP" firstAttribute="centerY" secondItem="dQl-yz-cD9" secondAttribute="centerY" id="OsP-FO-V4Q"/>
+                                <constraint firstItem="mQk-FZ-UMv" firstAttribute="leading" secondItem="3Va-GZ-XxK" secondAttribute="leading" id="PG5-aH-v78"/>
+                                <constraint firstItem="ybf-PJ-M6s" firstAttribute="top" secondItem="Ks4-bo-afQ" secondAttribute="bottom" constant="5" id="Q7r-pd-gHW"/>
+                                <constraint firstAttribute="bottom" secondItem="jLP-1S-daq" secondAttribute="bottom" constant="87.5" id="STk-qQ-sgi"/>
+                                <constraint firstItem="mWj-s3-le5" firstAttribute="leading" secondItem="C3n-X0-bud" secondAttribute="leading" id="aGA-7l-qD0"/>
+                                <constraint firstItem="Ks4-bo-afQ" firstAttribute="top" secondItem="oPn-PR-h2c" secondAttribute="bottom" constant="15" id="add-An-Z3i"/>
+                                <constraint firstItem="grn-k9-Abz" firstAttribute="top" secondItem="dQl-yz-cD9" secondAttribute="bottom" constant="15" id="bwM-xR-o57"/>
+                                <constraint firstAttribute="trailing" secondItem="WxN-lm-HIP" secondAttribute="trailing" constant="8" id="eUb-rO-oH1"/>
+                                <constraint firstItem="mWj-s3-le5" firstAttribute="top" secondItem="C3n-X0-bud" secondAttribute="bottom" constant="5" id="f0b-IW-23c"/>
+                                <constraint firstItem="3Va-GZ-XxK" firstAttribute="top" secondItem="5L1-9x-Muw" secondAttribute="top" constant="8" id="gra-yP-R1Q"/>
+                                <constraint firstItem="jLP-1S-daq" firstAttribute="centerX" secondItem="5L1-9x-Muw" secondAttribute="centerX" id="gt1-Ri-LsA"/>
+                                <constraint firstItem="Ks4-bo-afQ" firstAttribute="leading" secondItem="5L1-9x-Muw" secondAttribute="leading" constant="8" id="hTo-TH-chJ"/>
+                                <constraint firstItem="mQk-FZ-UMv" firstAttribute="top" secondItem="3Va-GZ-XxK" secondAttribute="bottom" constant="5" id="o31-Xr-lY7"/>
+                                <constraint firstItem="bMZ-f5-QLC" firstAttribute="top" secondItem="mWj-s3-le5" secondAttribute="bottom" constant="15" id="q3d-eI-cJq"/>
+                                <constraint firstItem="C3n-X0-bud" firstAttribute="top" secondItem="ybf-PJ-M6s" secondAttribute="bottom" constant="15" id="qfB-Ge-uvd"/>
+                                <constraint firstItem="ybf-PJ-M6s" firstAttribute="leading" secondItem="Ks4-bo-afQ" secondAttribute="leading" id="qnX-c2-IJX"/>
+                                <constraint firstItem="NvD-Ok-cOD" firstAttribute="top" secondItem="grn-k9-Abz" secondAttribute="bottom" constant="5" id="rHu-ih-aa7"/>
+                                <constraint firstItem="mWj-s3-le5" firstAttribute="centerY" secondItem="5SX-Ex-Lxf" secondAttribute="centerY" id="rLt-iv-3Tj"/>
+                                <constraint firstAttribute="trailing" secondItem="oPn-PR-h2c" secondAttribute="trailing" constant="8" id="tzz-pP-4Tz"/>
+                                <constraint firstItem="C3n-X0-bud" firstAttribute="leading" secondItem="5L1-9x-Muw" secondAttribute="leading" constant="8" id="vzl-7E-b49"/>
+                                <constraint firstItem="oPn-PR-h2c" firstAttribute="leading" secondItem="mQk-FZ-UMv" secondAttribute="trailing" constant="5" id="z8g-b2-lYt"/>
+                                <constraint firstItem="Erk-D2-Pdi" firstAttribute="leading" secondItem="grn-k9-Abz" secondAttribute="trailing" constant="3" id="zaL-rs-YKJ"/>
+                                <constraint firstItem="mQk-FZ-UMv" firstAttribute="centerY" secondItem="oPn-PR-h2c" secondAttribute="centerY" id="zvU-tu-k2X"/>
+                                <constraint firstItem="NvD-Ok-cOD" firstAttribute="leading" secondItem="5L1-9x-Muw" secondAttribute="leading" constant="8" id="zx1-W9-jbB"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="5L1-9x-Muw" firstAttribute="top" secondItem="hdt-oS-Htb" secondAttribute="top" id="Cwo-EV-NgT"/>
+                        <constraint firstAttribute="trailing" secondItem="5L1-9x-Muw" secondAttribute="trailing" id="fi8-JJ-my8"/>
+                        <constraint firstAttribute="bottom" secondItem="5L1-9x-Muw" secondAttribute="bottom" id="uyU-YY-d67"/>
+                        <constraint firstItem="5L1-9x-Muw" firstAttribute="leading" secondItem="hdt-oS-Htb" secondAttribute="leading" id="vVW-5f-TGR"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="hdt-oS-Htb" firstAttribute="leading" secondItem="z3E-sF-chn" secondAttribute="leading" id="1XX-vf-sGV"/>
+                <constraint firstAttribute="bottom" secondItem="hdt-oS-Htb" secondAttribute="bottom" id="71l-mc-FIg"/>
+                <constraint firstItem="5L1-9x-Muw" firstAttribute="width" secondItem="z3E-sF-chn" secondAttribute="width" id="aa5-uc-tbw"/>
+                <constraint firstAttribute="trailing" secondItem="hdt-oS-Htb" secondAttribute="trailing" id="b12-g9-xLX"/>
+                <constraint firstItem="hdt-oS-Htb" firstAttribute="top" secondItem="z3E-sF-chn" secondAttribute="top" id="zWB-zP-83F"/>
+            </constraints>
+            <connections>
+                <outlet property="keyword" destination="NvD-Ok-cOD" id="KQe-VZ-WRm"/>
+                <outlet property="openNow" destination="WxN-lm-HIP" id="6Bs-jQ-QtI"/>
+                <outlet property="radius" destination="mWj-s3-le5" id="IJX-d5-fF2"/>
+                <outlet property="radiusUnitsLabel" destination="5SX-Ex-Lxf" id="yUH-p0-cX2"/>
+                <outlet property="resetButton" destination="mQk-FZ-UMv" id="nPN-qc-qmb"/>
+                <outlet property="searchAddress" destination="oPn-PR-h2c" id="8tA-T9-34n"/>
+                <outlet property="searchButton" destination="jLP-1S-daq" id="BTd-8l-Za9"/>
+                <outlet property="vegLevel" destination="ybf-PJ-M6s" id="08a-Lk-ELP"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="compass" width="22" height="22"/>
+    </resources>
+</document>

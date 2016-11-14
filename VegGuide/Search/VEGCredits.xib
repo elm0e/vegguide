@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version 1.1.1 (9999)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j4g-Pd-nHa" userLabel="Version">
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="w1F-ji-IXC">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="90" id="DAM-ln-WqY"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This application uses the following components under the MIT license:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X1m-xm-BDt">
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MBProgressHUD Copyright © 2009-2016 Matej Bukovinski" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cbh-Ff-gUN" userLabel="MBProgressHUD">
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WSCoachMarksView Copyright (c) 2013 Workshirt, Inc. All rights reserved." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nDT-6B-Fyi" userLabel="Coachmarks">
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Various components Copyright (c) 2016 Ambient Software Services. All rights reserved." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nTJ-2f-kDD" userLabel="Ambient">
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CC" translatesAutoresizingMaskIntoConstraints="NO" id="vZm-K6-dBq">
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="88" id="Adu-AY-R6d"/>
+                        <constraint firstAttribute="width" constant="88" id="CdU-fp-Yev"/>
+                        <constraint firstAttribute="height" constant="31" id="Wdf-3B-ef7"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dcM-w1-zwf">
+                    <state key="normal" title="OK"/>
+                </button>
+                <label opaque="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x9D-WQ-pfl" userLabel="Copyright">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="lEr-F2-nD3"/>
+                    </constraints>
+                    <attributedString key="attributedText">
+                        <fragment content="VegGuide.org and its contents are Copyright © 2003-2016 Compassionate Action for Animals.  Some rights reserved.">
+                            <attributes>
+                                <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="12" name="HelveticaNeue"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="lEr-F2-nD3"/>
+                        </mask>
+                    </variation>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="X1m-xm-BDt" firstAttribute="top" secondItem="vZm-K6-dBq" secondAttribute="bottom" constant="23" id="1M6-qT-gLd"/>
+                <constraint firstItem="nDT-6B-Fyi" firstAttribute="leading" secondItem="w1F-ji-IXC" secondAttribute="leading" id="5Mi-Gv-QSU"/>
+                <constraint firstItem="w1F-ji-IXC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="5hC-VE-PPL"/>
+                <constraint firstItem="x9D-WQ-pfl" firstAttribute="trailing" secondItem="w1F-ji-IXC" secondAttribute="trailing" id="5oK-Jr-SKA"/>
+                <constraint firstAttribute="bottom" secondItem="dcM-w1-zwf" secondAttribute="bottom" constant="8" id="Chb-Eb-d2R"/>
+                <constraint firstItem="vZm-K6-dBq" firstAttribute="leading" secondItem="w1F-ji-IXC" secondAttribute="leading" id="Cv8-3b-4eq"/>
+                <constraint firstItem="vZm-K6-dBq" firstAttribute="leading" secondItem="x9D-WQ-pfl" secondAttribute="leading" id="IQV-FU-EtK"/>
+                <constraint firstAttribute="trailing" secondItem="w1F-ji-IXC" secondAttribute="trailing" constant="8" id="Ivw-7V-XR2"/>
+                <constraint firstItem="x9D-WQ-pfl" firstAttribute="top" secondItem="w1F-ji-IXC" secondAttribute="bottom" constant="41" id="JKg-Mh-Dva"/>
+                <constraint firstItem="X1m-xm-BDt" firstAttribute="leading" secondItem="w1F-ji-IXC" secondAttribute="leading" id="Kj3-mn-4FQ"/>
+                <constraint firstItem="nTJ-2f-kDD" firstAttribute="top" secondItem="nDT-6B-Fyi" secondAttribute="bottom" constant="3" id="PLK-CH-5z2"/>
+                <constraint firstItem="Cbh-Ff-gUN" firstAttribute="leading" secondItem="w1F-ji-IXC" secondAttribute="leading" id="Rdk-dq-FBk"/>
+                <constraint firstItem="nTJ-2f-kDD" firstAttribute="leading" secondItem="w1F-ji-IXC" secondAttribute="leading" id="T2C-AT-NjE"/>
+                <constraint firstItem="j4g-Pd-nHa" firstAttribute="top" secondItem="w1F-ji-IXC" secondAttribute="bottom" constant="8" id="WvA-gG-7TF"/>
+                <constraint firstItem="Cbh-Ff-gUN" firstAttribute="top" secondItem="X1m-xm-BDt" secondAttribute="bottom" constant="2" id="XP1-TT-M6A"/>
+                <constraint firstItem="w1F-ji-IXC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="Yhn-iK-DQX"/>
+                <constraint firstItem="nDT-6B-Fyi" firstAttribute="top" secondItem="Cbh-Ff-gUN" secondAttribute="bottom" constant="3" id="Z6M-6r-ckH"/>
+                <constraint firstItem="x9D-WQ-pfl" firstAttribute="leading" secondItem="w1F-ji-IXC" secondAttribute="leading" id="ZDd-Pu-KHy"/>
+                <constraint firstItem="nTJ-2f-kDD" firstAttribute="trailing" secondItem="w1F-ji-IXC" secondAttribute="trailing" id="a2c-RD-80V"/>
+                <constraint firstItem="dcM-w1-zwf" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="eQc-E2-WXQ"/>
+                <constraint firstItem="j4g-Pd-nHa" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="gjG-OD-41V"/>
+                <constraint firstItem="nDT-6B-Fyi" firstAttribute="trailing" secondItem="w1F-ji-IXC" secondAttribute="trailing" id="hSq-95-ALv"/>
+                <constraint firstItem="X1m-xm-BDt" firstAttribute="trailing" secondItem="w1F-ji-IXC" secondAttribute="trailing" id="wDw-pq-x87"/>
+                <constraint firstItem="vZm-K6-dBq" firstAttribute="top" secondItem="x9D-WQ-pfl" secondAttribute="bottom" constant="6" id="wjo-5H-f8V"/>
+                <constraint firstItem="Cbh-Ff-gUN" firstAttribute="trailing" secondItem="w1F-ji-IXC" secondAttribute="trailing" id="woT-Pv-8Ec"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="CC" width="44" height="15"/>
+        <image name="logo" width="1463" height="241"/>
+    </resources>
+</document>

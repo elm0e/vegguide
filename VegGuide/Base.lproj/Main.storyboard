@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="L7u-rV-jgh">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Detail-->
+        <scene sceneID="yUG-lL-AsK">
+            <objects>
+                <viewController autoresizesArchivedViewToFullSize="NO" title="Detail" id="JEX-9P-axG" customClass="PlaceViewController" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <toolbarItems/>
+                    <connections>
+                        <segue destination="ePc-gA-170" kind="show" identifier="showWebsite" id="bWN-0m-f7c"/>
+                        <segue destination="BDb-OP-765" kind="show" identifier="showPlaceMap" id="NoH-GU-2dy"/>
+                        <segue destination="Sr5-IX-Lul" kind="show" identifier="showImages" id="IoD-VH-KJ0"/>
+                        <segue destination="6ou-ul-Ydh" kind="show" identifier="showReviews" id="dxn-4H-04D"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FJe-Yq-33r" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1771" y="210"/>
+        </scene>
+        <!--Review Table View Controller-->
+        <scene sceneID="2u5-lh-TKs">
+            <objects>
+                <tableViewController id="6ou-ul-Ydh" customClass="ReviewTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="clk-Ds-NuQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <connections>
+                            <outlet property="dataSource" destination="6ou-ul-Ydh" id="D1l-Hg-Wxq"/>
+                            <outlet property="delegate" destination="6ou-ul-Ydh" id="KjY-NH-dUB"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cUb-0S-RTT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2586" y="1034"/>
+        </scene>
+        <!--Gallery-->
+        <scene sceneID="Dxj-cg-XSN">
+            <objects>
+                <collectionViewController title="Gallery" id="Sr5-IX-Lul" userLabel="Gallery" customClass="ImageCollectionViewController" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="prototypes" id="0FR-mL-psB">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="egP-Z5-I2M">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells/>
+                        <connections>
+                            <outlet property="dataSource" destination="Sr5-IX-Lul" id="2YM-LE-EBG"/>
+                            <outlet property="delegate" destination="Sr5-IX-Lul" id="xgI-or-jDE"/>
+                        </connections>
+                    </collectionView>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4dm-fU-s5U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2586" y="-483"/>
+        </scene>
+        <!--Website-->
+        <scene sceneID="UGf-mr-FmU">
+            <objects>
+                <viewController id="ePc-gA-170" userLabel="Website" customClass="WebsiteViewController" sceneMemberID="viewController">
+                    <webView key="view" contentMode="scaleToFill" scalesPageToFit="YES" id="mkP-j8-rhW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.28958413004875183" green="0.31462949514389038" blue="0.32950475811958313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
+                    </webView>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zIl-fd-Rtb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2586" y="210"/>
+        </scene>
+        <!--Map-->
+        <scene sceneID="yrV-8c-tOs">
+            <objects>
+                <viewController title="Map" id="BDb-OP-765" customClass="MapViewController" sceneMemberID="viewController">
+                    <mapView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" id="ZxS-xR-rBi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <connections>
+                            <outlet property="delegate" destination="BDb-OP-765" id="fhe-fp-6I3"/>
+                        </connections>
+                    </mapView>
+                    <connections>
+                        <segue destination="JEX-9P-axG" kind="show" identifier="showMapDetail" id="vXq-Um-Wpu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TyS-fv-qGl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="971" y="1034"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="Dbk-Vo-Be3">
+            <objects>
+                <viewController title="Search" extendedLayoutIncludesOpaqueBars="YES" automaticallyAdjustsScrollViewInsets="NO" id="Uj7-e1-fd6" customClass="SearchViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fUc-De-ckR"/>
+                        <viewControllerLayoutGuide type="bottom" id="GWs-lt-Lff"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ft8-KZ-w9M" customClass="SearchView">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationItem key="navigationItem" id="FzV-95-fFe"/>
+                    <connections>
+                        <segue destination="7bK-jq-Zjz" kind="show" identifier="showList" id="mc1-eI-IRp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1hB-KS-N2F" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="153" y="186"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="PSm-3m-xAm">
+            <objects>
+                <navigationController title="VegGuide" modalTransitionStyle="flipHorizontal" id="L7u-rV-jgh" userLabel="Navigation Controller" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="p02-rn-Muh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Uj7-e1-fd6" kind="relationship" relationship="rootViewController" id="HIm-Hb-jPo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NGH-Nl-uNS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="153" y="-630"/>
+        </scene>
+        <!--Locations-->
+        <scene sceneID="smW-Zh-WAh">
+            <objects>
+                <tableViewController title="Locations" clearsSelectionOnViewWillAppear="NO" id="7bK-jq-Zjz" customClass="MasterViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsVerticalScrollIndicator="NO" keyboardDismissMode="interactive" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="66" sectionHeaderHeight="25" sectionFooterHeight="25" id="r7i-6Z-zg0">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="7bK-jq-Zjz" id="Gho-Na-rnu"/>
+                            <outlet property="delegate" destination="7bK-jq-Zjz" id="RA6-mI-bju"/>
+                        </connections>
+                    </tableView>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationItem key="navigationItem" id="hnx-P1-JwD">
+                        <barButtonItem key="rightBarButtonItem" title="Map" id="Uwf-SX-RXM">
+                            <connections>
+                                <segue destination="BDb-OP-765" kind="show" identifier="showMap" id="LlF-sq-sgN"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="JEX-9P-axG" kind="showDetail" identifier="showDetail" action="showViewController:sender:" id="Dra-7b-58o"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rux-fX-hf1" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="925" y="186"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="vXq-Um-Wpu"/>
+        <segue reference="LlF-sq-sgN"/>
+    </inferredMetricsTieBreakers>
+</document>
